@@ -10,7 +10,11 @@
   margin: 0 auto;
   max-width: 1200px;
 }
-
+@keyframes ef-pulse-grow {
+  to {
+    transform: scale(1.1);
+  }
+}
 .background-top {
   background-color: #011e11;
 }
@@ -63,6 +67,15 @@
   font-size: 20px;
   color: #011e11;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  animation-name: ef-pulse-grow;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .callToAction button:hover {
   background: transparent;
@@ -233,6 +246,15 @@
   font-size: 20px;
   color: #011e11;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  animation-name: ef-pulse-grow;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .text-footer button:hover {
   background: transparent;
